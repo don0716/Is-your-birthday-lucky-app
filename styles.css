@@ -33,7 +33,7 @@ label {
 .container {
     width: 50%;
    margin: auto;
-   padding: 8rem;
+   padding: 6rem;
 }
 
 input, label {
@@ -98,4 +98,10 @@ input {
 
 .project {
   padding-top: 0.5rem;
+}
+
+#note {
+    text-align: center;
+    padding: 2rem 2rem;
+    color:rgb(165, 1, 102);
 }
