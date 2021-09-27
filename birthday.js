@@ -9,19 +9,33 @@ const output = document.querySelector("#output");
 function calSum(dob) {
     dob = dob.replaceAll("-","")
     let sum = 0;
-    for(let index=0; index<= dob.length; index++) {
-        sum =  sum + Number(dob.charAt(index))
+    for(let index=0; index <= dob.length; index++) {
+        sum =  sum + Number(dob.charAt(index));
     }
     return sum;
 }
 
-
-
-
 function luckyOrNotBtn() {
     const dob = dateOfBirth.value;
     const sum = calSum(dob);
-    console.log(sum)
+    if(sum&&dob) {
+    compareValues(sum, Number(luckyNumber.value))
+    } else {
+        output.innerText = "Please enter both VALUES!!"
+    }
 }
 
 checkBtn.addEventListener("click", luckyOrNotBtn);
+
+// output
+
+function compareValues(sum, luckyNumber){
+    if(sum%luckyNumber === 0) {
+        output.innerText = "Your Birthday is LUCKY!"
+    }  else [
+        output.innerText = "Your Birthday is not LUCKY!!"
+    ]
+}
+
+
+
