@@ -48,6 +48,7 @@ input, label {
     padding: 0.3rem;
     border-radius: 0.5rem;
     background-color: rgb(240, 147, 204);
+    margin-bottom: 22rem;
 }
 
 input {
@@ -60,3 +61,37 @@ input {
     margin-top: 1rem;
     color: rgb(153, 8, 97);
 }
+
+/* lists */
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/* footer */
+.footer {
+    background-color: #F472B6;
+    border-radius: 4rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    color:#700b35;
+    
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer .link {
+    color:black;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
