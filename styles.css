@@ -23,7 +23,6 @@ body {
 label {
     font-weight: bold;
     color: rgb(148, 3, 92);
-    
 }
 
 #date-of-birth {
@@ -31,7 +30,7 @@ label {
 }
 
 .container {
-    width: 50%;
+    width: 20%;
    margin: auto;
    padding: 2rem;
 }
